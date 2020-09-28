@@ -1,23 +1,24 @@
 {
   "files": {
-    "main.css": "/public_web/static/css/main.5f361e03.chunk.css",
-    "main.js": "/public_web/static/js/main.b0cc03bb.chunk.js",
-    "main.js.map": "/public_web/static/js/main.b0cc03bb.chunk.js.map",
+    "main.css": "/public_web/static/css/main.5ecd60fb.chunk.css",
+    "main.js": "/public_web/static/js/main.6a6efb8b.chunk.js",
+    "main.js.map": "/public_web/static/js/main.6a6efb8b.chunk.js.map",
     "runtime-main.js": "/public_web/static/js/runtime-main.5448edcd.js",
     "runtime-main.js.map": "/public_web/static/js/runtime-main.5448edcd.js.map",
-    "static/js/2.da62da10.chunk.js": "/public_web/static/js/2.da62da10.chunk.js",
-    "static/js/2.da62da10.chunk.js.map": "/public_web/static/js/2.da62da10.chunk.js.map",
+    "static/js/2.338bae8e.chunk.js": "/public_web/static/js/2.338bae8e.chunk.js",
+    "static/js/2.338bae8e.chunk.js.map": "/public_web/static/js/2.338bae8e.chunk.js.map",
     "index.html": "/public_web/index.html",
-    "precache-manifest.9c62047263d2243ded8c2cdebdd136b9.js": "/public_web/precache-manifest.9c62047263d2243ded8c2cdebdd136b9.js",
+    "precache-manifest.e5354f3ada3d4b5903d1b32dedbd08f7.js": "/public_web/precache-manifest.e5354f3ada3d4b5903d1b32dedbd08f7.js",
     "service-worker.js": "/public_web/service-worker.js",
-    "static/css/main.5f361e03.chunk.css.map": "/public_web/static/css/main.5f361e03.chunk.css.map",
-    "static/js/2.da62da10.chunk.js.LICENSE.txt": "/public_web/static/js/2.da62da10.chunk.js.LICENSE.txt",
-    "static/media/logo.svg": "/public_web/static/media/logo.5d5d9eef.svg"
+    "static/css/main.5ecd60fb.chunk.css.map": "/public_web/static/css/main.5ecd60fb.chunk.css.map",
+    "static/js/2.338bae8e.chunk.js.LICENSE.txt": "/public_web/static/js/2.338bae8e.chunk.js.LICENSE.txt",
+    "static/media/campaign_1.pdf": "/public_web/static/media/campaign_1.cb7e4eea.pdf",
+    "static/media/leaderfocus_logo.png": "/public_web/static/media/leaderfocus_logo.9a423d53.png"
   },
   "entrypoints": [
     "static/js/runtime-main.5448edcd.js",
-    "static/js/2.da62da10.chunk.js",
-    "static/css/main.5f361e03.chunk.css",
-    "static/js/main.b0cc03bb.chunk.js"
+    "static/js/2.338bae8e.chunk.js",
+    "static/css/main.5ecd60fb.chunk.css",
+    "static/js/main.6a6efb8b.chunk.js"
   ]
 }
