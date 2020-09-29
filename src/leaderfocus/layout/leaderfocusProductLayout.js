@@ -1,7 +1,7 @@
 import React from "react";
-import LeaderfocusHeader from "./header/leaderfocusHeader";
-import LeaderfocusFooter from "./footer/leaderfocusFooter";
-import View from "../component/view";
+import LeaderfocusHeader from "./leaderfocusHeader";
+import LeaderfocusFooter from "./leaderfocusFooter";
+import View from "../../component/view";
 
 export default function LeaderfocusProductLayout(props) {
   return (
@@ -16,17 +16,25 @@ export default function LeaderfocusProductLayout(props) {
 
 function Content({
   characteristics,
+  dealerTitle,
   pdfFileUrl,
   productImageUrl,
   productName,
 }) {
   return (
     <View style={styles.contentContainer}>
-      <h2 style={styles.productNameText}>{productName}</h2>
+      <View style={styles.productNameContainer}>
+        <h2>{productName}</h2>
+        <h6>{dealerTitle}</h6>
+      </View>
+
       {generateList(characteristics)}
-      <a href={pdfFileUrl}>
-        <p style={styles.productDetailText}>產品詳細</p>
-      </a>
+      <div style={styles.productDetailTextContainer}>
+        <a href={pdfFileUrl}>
+          <p style={styles.productDetailText}>產品詳細</p>
+        </a>
+      </div>
+
       <img
         alt={`${productName}_image`}
         src={productImageUrl}
@@ -38,11 +46,7 @@ function Content({
 
 function generateList(items) {
   const itemList = items.map((item) => <li>{item}</li>);
-  return (
-    <ul style={styles.productCharacteristicsContainer}>
-      <p>{itemList}</p>
-    </ul>
-  );
+  return <ul variant="flush">{itemList}</ul>;
 }
 
 const styles = {
@@ -53,15 +57,14 @@ const styles = {
     marginRight: 20,
   },
   productCharacteristicsContainer: {
-    margin: 0,
+    marginTop: 20,
   },
-  productDetailText: {
-    marginTop: 0,
-  },
+  productDetailTextContainer: { marginTop: 0 },
   prodcutImage: {
     width: "100%",
   },
-  productNameText: {
-    marginBottom: 0,
+  productNameContainer: {
+    alignItems: "flex-end",
+    marginTop: 20,
   },
 };

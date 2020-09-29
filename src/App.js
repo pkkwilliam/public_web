@@ -1,19 +1,22 @@
 import React from "react";
 import { Route, HashRouter as Router, Switch } from "react-router-dom";
-import MianWang from "./leaderfocus/product/shuang_fu/mianWang";
-import Home from "./home/home";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { Pages } from "./component/pages";
 
 function App() {
   return (
     <div style={{ display: "flex", flexDirection: "column", height: "100vh" }}>
       <Router history={"hashHistory"}>
-        <Switch>
-          <Route path="/leaderfocus/mian_wang" component={MianWang} />
-          <Route path="/" component={Home} />
-        </Switch>
+        <Switch>{generateRoutes()}</Switch>
       </Router>
     </div>
   );
+}
+
+function generateRoutes() {
+  return Pages.map((page) => (
+    <Route path={page.path} component={page.component} />
+  ));
 }
 
 export default App;
