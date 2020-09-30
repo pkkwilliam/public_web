@@ -51,7 +51,6 @@ function generateList(items) {
 
 const styles = {
   contentContainer: {
-    flex: 1,
     flexDirection: "column",
     marginLeft: 20,
     marginRight: 20,

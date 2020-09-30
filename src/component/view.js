@@ -11,5 +11,6 @@ export default function View(props) {
 const styles = {
   rootContainer: {
     display: "flex",
+    flex: "0 0 auto",
   },
 };
