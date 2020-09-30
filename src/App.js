@@ -1,7 +1,8 @@
 import React from "react";
 import { Route, HashRouter as Router, Switch } from "react-router-dom";
-import "bootstrap/dist/css/bootstrap.min.css";
 import { Pages } from "./component/pages";
+
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (

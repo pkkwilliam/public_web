@@ -31,7 +31,7 @@ function Content({
       {generateList(characteristics)}
       <div style={styles.productDetailTextContainer}>
         <a href={pdfFileUrl}>
-          <p style={styles.productDetailText}>產品詳細</p>
+          <p>產品詳細</p>
         </a>
       </div>
 
